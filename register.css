@@ -1,0 +1,98 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-image: url('https://plus.unsplash.com/premium_photo-1681426730828-bfee2d13861d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D://images.unsplash.com/photo-1518837695005-28d0efdc88b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGVjb21tZXJjZXxlbnwwfHx8fDE2Mzg4MzAzMzY&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.container {
+    background: rgba(50, 50, 50, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+}
+
+.form {
+    display: none; /* Hide forms by default */
+}
+
+.form.active {
+    display: block; /* Show the active form */
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    font-size: 14px; /* Reduced font size */
+}
+
+input:focus {
+    border-color: #ED6100; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(237, 97, 0, 0.5); /* Optional shadow effect */
+}
+
+.btn {
+    padding: 10px;
+    color: #FFF;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ED6100;
+}
+
+.btn:hover {
+    background: #FB8500;
+}
+
+.switch-text {
+    margin-top: 1rem;
+    text-align: center;
+    color: #CCC;
+}
+
+.switch-text span {
+    color: #ED6100;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.error {
+    color: #FF0000; /* Red color for error messages */
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Use a percentage width for smaller screens */
+        padding: 1rem; /* Reduce padding */
+    }
+}
